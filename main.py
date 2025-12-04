@@ -84,7 +84,7 @@ def main():
     parser.add_argument(
         "--data-dir",
         type=str,
-        default="cs4346-data",
+        default=".",
         help="Root directory containing digitdata/ and facedata/."
     )
 
