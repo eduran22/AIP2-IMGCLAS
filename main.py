@@ -28,12 +28,13 @@ def build_default_paths(data_dir: str, dataset: str):
 
     elif dataset == "faces":
         subdir = "facedata"
-        train_img = "trainingimages"
-        train_lbl = "traininglabels"
-        val_img = "validationimages"
-        val_lbl = "validationlabels"
-        test_img = "testimages"
-        test_lbl = "testlabels"
+        train_img = "facedatatrain"
+        train_lbl = "facedatatrainlabels"
+        val_img = "facedatavalidation"
+        val_lbl = "facedatavalidationlabels"
+        test_img = "facedatatest"
+        test_lbl = "facedatatestlabels"
+
 
     else:
         raise ValueError("Dataset must be 'digits' or 'faces'.")
